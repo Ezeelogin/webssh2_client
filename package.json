@@ -95,11 +95,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "standard": {
-    "ignore": [
-      "client/public/**/*"
-    ]
-  },
   "overrides": {
     "serialize-javascript": ">=7.0.3"
   },
