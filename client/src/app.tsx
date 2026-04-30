@@ -856,9 +856,9 @@ const App: Component = () => {
           />
 
           {/* Footer and Status */}
-          <div class="inline-block border-l border-neutral-200 px-[10px] text-left">
+          {/* <div class="inline-block border-l border-neutral-200 px-[10px] text-left">
             {sessionFooter()}
-          </div>
+          </div> */}
           <Show when={protocol() !== 'telnet'}>
             <HostKeyStatusIndicator />
           </Show>
