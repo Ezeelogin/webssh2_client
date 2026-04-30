@@ -178,12 +178,11 @@ const App: Component = () => {
       }
 
       // Set session footer
-      // const footerProtocol =
-      //   initialConfig.protocol === 'telnet' ? 'telnet' : 'ssh'
-      // const footer = initialConfig.ssh.host
-      //   ? `${footerProtocol}://${initialConfig.ssh.host}:${initialConfig.ssh.port}`
-      //   : null
-      const footer = null
+      const footerProtocol =
+        initialConfig.protocol === 'telnet' ? 'telnet' : 'ssh'
+      const footer = initialConfig.ssh.host
+        ? `${footerProtocol}://${initialConfig.ssh.host}:${initialConfig.ssh.port}`
+        : null
       setSessionFooter(footer)
       setGlobalSessionFooter(footer)
 
